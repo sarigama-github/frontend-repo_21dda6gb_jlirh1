@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import ContactForm from './ContactForm'
 
 export function MusicSection() {
   const tracks = [
@@ -148,12 +149,7 @@ export function ContactSection() {
       <div className="max-w-6xl mx-auto px-6 py-20">
         <h2 className="text-3xl sm:text-4xl font-black tracking-tight">Contact</h2>
         <div className="mt-8 grid md:grid-cols-2 gap-8">
-          <form className="space-y-4">
-            <input type="text" placeholder="Name" className="w-full bg-zinc-900/80 border border-white/10 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500" />
-            <input type="email" placeholder="Email" className="w-full bg-zinc-900/80 border border-white/10 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500" />
-            <textarea rows="5" placeholder="Message" className="w-full bg-zinc-900/80 border border-white/10 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500" />
-            <button type="submit" className="px-6 py-3 rounded-md bg-gradient-to-r from-red-600 to-amber-500 text-white font-semibold shadow-lg shadow-red-900/30">Send</button>
-          </form>
+          <ContactForm />
           <div className="space-y-4 text-zinc-300">
             <p>For bookings, collaborations, or press: reach out via the form or email below.</p>
             <a href="mailto:contact@emberlance.com" className="text-white font-semibold">contact@emberlance.com</a>
